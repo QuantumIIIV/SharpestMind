@@ -1,0 +1,25 @@
+Meeting on 16 Septemebr 2019
+
+Hi Shahram,
+
+Thanks for spending the time today to get started. As promised here is a summary of what we discussed, the tasks for week 1 and a few helpful links to get started.
+
+Discussion Summary:
+1. We have agreed on the weekly cadence, we will have one code review and another discussion around the direction of the project.
+2. I will respond and let you know in case if I need some time to respond and you are free to freeze.
+3. Reach out to me via text and we are going to have hangout calls for our meetings.
+
+Tasks:
+1. Get set up with Git on your system
+2. Understand the various data collection and formats etc. explore - https://scale.com/ ; https://www.basic.ai/; https://towardsdatascience.com/web-scraping-with-python-a-to-copy-z-277a445d64c7
+3. Build a research brief of types of data and collection and annotation methods
+4. Work with the Malware dataset on Kaggle to get started with some data loading and visualizations to tell a story by data
+
+Links:
+Git Basics - https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html  **- Read on 17 Spt 2019
+Creating a Shared Git Repo - https://help.github.com/en/articles/inviting-collaborators-to-a-personal-repository ** Done on 18 Sept 2019
+My Git Profile - https://github.com/debadyutirc 
+Python Style Guide - https://docs.python-guide.org/writing/style/ ** Scanned on 18 Sept 2019
+Python Structure Guide - https://docs.python-guide.org/writing/structure/
+Dataset for the first-week analysis and visualization task - https://www.kaggle.com/c/microsoft-malware-prediction/data
+Google Colab - https://colab.research.google.com/notebooks/welcome.ipynb#recent=true
