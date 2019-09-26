@@ -1,0 +1,124 @@
+2nd Hangout meeting Meeting on Tuesday (September 24th, 2019) - 2:30 - 3:10 PM.
+
+Hi,
+
+Here are the links that I want to share with you - 
+https://matplotlib.org/3.1.0/gallery/statistics/violinplot.html
+https://scikit-learn.org/stable/modules/density.html
+https://seaborn.pydata.org/generated/seaborn.kdeplot.html
+
+Different plotting methods - 
+https://matplotlib.org/3.1.0/tutorials/introductory/sample_plots.html#sphx-glr-tutorials-introductory-sample-plots-py
+https://seaborn.pydata.org/tutorial.html
+
+Her is what I want you to do - 
+
+1. Look at the tutorials in Matplotlib and Seaborn
+2. Based on the dataset identify the plots that would work for the dataset
+3. Try out different plots
+4. Write comments to explain what you did, why you thought it was relevant and what your findings are
+5. Start ideating on who to deal with missing values
+
+To load the file which is large - there are 2 main techniques:
+
+Read up on the feather file format and numpy file format below:
+I am working on my version of the notebook and will share with you some code snippets next week. For now, read up on the following links:
+https://numpy.org/neps/nep-0001-npy-format.html
+https://pypi.org/project/feather-format/
+https://towardsdatascience.com/why-you-should-start-using-npy-file-more-often-df2a13cc0161
+
+I am going to start adding stuff to the notebook shortly bu for now try the solution below to load the entire file:
+Load objects as categories, object is fine as well.
+Binary values needs to be switched to int8
+Binary values with missing values are switched to float16 (int does not understand nan), it is possible to use category here as well.
+64 bits encoding are all switched to 32, or 16 of possible
+In [2]:
+dtypes = {
+        'MachineIdentifier':                                    'category',
+        'ProductName':                                          'category',
+        'EngineVersion':                                        'category',
+        'AppVersion':                                           'category',
+        'AvSigVersion':                                         'category',
+        'IsBeta':                                               'int8',
+        'RtpStateBitfield':                                     'float16',
+        'IsSxsPassiveMode':                                     'int8',
+        'DefaultBrowsersIdentifier':                            'float32',
+        'AVProductStatesIdentifier':                            'float32',
+        'AVProductsInstalled':                                  'float16',
+        'AVProductsEnabled':                                    'float16',
+        'HasTpm':                                               'int8',
+        'CountryIdentifier':                                    'int16',
+        'CityIdentifier':                                       'float32',
+        'OrganizationIdentifier':                               'float16',
+        'GeoNameIdentifier':                                    'float16',
+        'LocaleEnglishNameIdentifier':                          'int16',
+        'Platform':                                             'category',
+        'Processor':                                            'category',
+        'OsVer':                                                'category',
+        'OsBuild':                                              'int16',
+        'OsSuite':                                              'int16',
+        'OsPlatformSubRelease':                                 'category',
+        'OsBuildLab':                                           'category',
+        'SkuEdition':                                           'category',
+        'IsProtected':                                          'float16',
+        'AutoSampleOptIn':                                      'int8',
+        'PuaMode':                                              'category',
+        'SMode':                                                'float16',
+        'IeVerIdentifier':                                      'float16',
+        'SmartScreen':                                          'category',
+        'Firewall':                                             'float16',
+        'UacLuaenable':                                         'float64', # was 'float32'
+        'Census_MDC2FormFactor':                                'category',
+        'Census_DeviceFamily':                                  'category',
+        'Census_OEMNameIdentifier':                             'float32', # was 'float16'
+        'Census_OEMModelIdentifier':                            'float32',
+        'Census_ProcessorCoreCount':                            'float16',
+        'Census_ProcessorManufacturerIdentifier':               'float16',
+        'Census_ProcessorModelIdentifier':                      'float32', # was 'float16'
+        'Census_ProcessorClass':                                'category',
+        'Census_PrimaryDiskTotalCapacity':                      'float64', # was 'float32'
+        'Census_PrimaryDiskTypeName':                           'category',
+        'Census_SystemVolumeTotalCapacity':                     'float64', # was 'float32'
+        'Census_HasOpticalDiskDrive':                           'int8',
+        'Census_TotalPhysicalRAM':                              'float32',
+        'Census_ChassisTypeName':                               'category',
+        'Census_InternalPrimaryDiagonalDisplaySizeInInches':    'float32', # was 'float16'
+        'Census_InternalPrimaryDisplayResolutionHorizontal':    'float32', # was 'float16'
+        'Census_InternalPrimaryDisplayResolutionVertical':      'float32', # was 'float16'
+        'Census_PowerPlatformRoleName':                         'category',
+        'Census_InternalBatteryType':                           'category',
+        'Census_InternalBatteryNumberOfCharges':                'float64', # was 'float32'
+        'Census_OSVersion':                                     'category',
+        'Census_OSArchitecture':                                'category',
+        'Census_OSBranch':                                      'category',
+        'Census_OSBuildNumber':                                 'int16',
+        'Census_OSBuildRevision':                               'int32',
+        'Census_OSEdition':                                     'category',
+        'Census_OSSkuName':                                     'category',
+        'Census_OSInstallTypeName':                             'category',
+        'Census_OSInstallLanguageIdentifier':                   'float16',
+        'Census_OSUILocaleIdentifier':                          'int16',
+        'Census_OSWUAutoUpdateOptionsName':                     'category',
+        'Census_IsPortableOperatingSystem':                     'int8',
+        'Census_GenuineStateName':                              'category',
+        'Census_ActivationChannel':                             'category',
+        'Census_IsFlightingInternal':                           'float16',
+        'Census_IsFlightsDisabled':                             'float16',
+        'Census_FlightRing':                                    'category',
+        'Census_ThresholdOptIn':                                'float16',
+        'Census_FirmwareManufacturerIdentifier':                'float16',
+        'Census_FirmwareVersionIdentifier':                     'float32',
+        'Census_IsSecureBootEnabled':                           'int8',
+        'Census_IsWIMBootEnabled':                              'float16',
+        'Census_IsVirtualDevice':                               'float16',
+        'Census_IsTouchEnabled':                                'int8',
+        'Census_IsPenCapable':                                  'int8',
+        'Census_IsAlwaysOnAlwaysConnectedCapable':              'float16',
+        'Wdft_IsGamer':                                         'float16',
+        'Wdft_RegionIdentifier':                                'float16',
+        'HasDetections':                                        'int8'
+        }
+In [3]:
+test_df = pd.read_csv('../input/test.csv', dtype=dtypes)
+
+Talk soon!
