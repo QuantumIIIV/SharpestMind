@@ -1,0 +1,28 @@
+Meeting on Sunday Septemebr 29th - 6 - 6:60PM
+Email on Monday Sept 30th  - 8:30AM
+
+Hi Shahram,
+
+Here are the next steps for the project:
+You have already performed exploratory data analysis and you have looked at correlations
+Try to see apply algorithmic dimensionality reduction methods using - PCA and LDA using SciKit-Learn
+https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html
+https://scikit-learn.org/stable/modules/lda_qda.html
+
+After we have explored the data and etected correlations in the data and found out the relevant dimensions, we proceed to feature engineering.
+Feature Engineering - As discussed there are 4 main techniques in feature engineering.
+1. Discard irrelevant columns
+2. Impute columns with missing values using some generic logic (Mean/Median/RandomDistribution etc.)
+3. Encoding variables from categorical to numeric, one-hot encoding, sparse matrix or custom ranges
+4. Dealing with missing values at a granular level 
+
+As you can tell #3 and #4 are time-consuming steps.
+
+Look at the following libraries for data preprocessing and missing value imputation and encoding:
+MLBox - https://mlbox.readthedocs.io/en/latest/
+Impyute - https://impyute.readthedocs.io/en/master/
+
+Modelling:
+Try converting the data into a Sparse Matrix and apply XGBoost and Light Gradient Boosting Machine as a couple of modelling methods and train classifiers.
+
+Talk to you again soon!
