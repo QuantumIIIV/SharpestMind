@@ -1,0 +1,4 @@
+01 - Meeting on Saturday October 5th - 10:00 - 10:45 AM
+02 - Meeting on Wednesday October 9th - 6:30 - 7:00 PM
+	We discussed feature Engineering - Data Manupulation. How I replaced the NaN values with mean. (the mean method returned NaN due to float 32 I guess)
+
