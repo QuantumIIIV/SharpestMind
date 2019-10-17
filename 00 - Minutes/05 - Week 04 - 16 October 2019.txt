@@ -1,0 +1,8 @@
+Hangout meeting - 16 Ocotber 2019 - 5:40 - 6:20PM
+
+1 - Functionalize (make a calss) alot of processes in the notebook
+2 - Add the Virus version to the features and fill in the Gap
+	2 - 1: Deb share a Trello card for this.
+3 - Grid Search
+4 - We also talked about fast.ai 
+5 - We can pause the mentoship during the first week of Deb work start (October 21st)
