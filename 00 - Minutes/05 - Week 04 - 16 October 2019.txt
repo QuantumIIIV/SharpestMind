@@ -1,6 +1,6 @@
 Hangout meeting - 16 Ocotber 2019 - 5:40 - 6:20PM
 
-1 - Functionalize (make a calss) alot of processes in the notebook
+1 - Functionalize (make a calss) a lot of processes in the notebook
 2 - Add the Virus version to the features and fill in the Gap
 	2 - 1: Deb share a Trello card for this.
 3 - Grid Search
