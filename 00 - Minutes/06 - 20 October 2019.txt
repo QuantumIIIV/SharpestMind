@@ -1,0 +1,22 @@
+Meeting on Sunday October 2019 - 6:30 - 7:35PM
+
+1 - Reading material:
+	* - ML Mastery Webiste: https://machinelearningmastery.com/blog/
+	* - Fast.ai
+	* - https://paperswithcode.com/sota
+2 - Current Malware Project:
+	* - clean the current Notebook:
+	* - Graphs:
+	* - choose three diefferent Model:
+		* - RandomForest
+		* - Logistic Regression
+		* -  XGBoost
+	* -  Explore different model performance and benchmark the model capabilities
+		* - Grid Search
+		* - Cross-validation
+		* - Confusion Matrix 
+		* - Accuracy Score
+		* - Parameter tunings
+	* - Add a Requirement.txt file to the repositiory including the libraries and its version used
+3 - Try to work on a story line for a blog post
+4 - Work on Resume:
