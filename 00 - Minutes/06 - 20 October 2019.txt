@@ -8,9 +8,9 @@ Meeting on Sunday October 2019 - 6:30 - 7:35PM
 	* - clean the current Notebook:
 	* - Graphs:
 	* - choose three diefferent Model:
+		* - XGBoost
 		* - RandomForest
 		* - Logistic Regression
-		* -  XGBoost
 	* -  Explore different model performance and benchmark the model capabilities
 		* - Grid Search
 		* - Cross-validation
