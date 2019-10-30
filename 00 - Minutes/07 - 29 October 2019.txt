@@ -1,0 +1,14 @@
+29 October 2019 - Start at 6:45PM - 7:
+
+1- Read: 
+	*: https://medium.com/louis-dorard/from-data-to-ai-with-the-machine-learning-canvas-part-i-d171b867b047
+	*: https://www.predictionmachines.ai/
+	*: https://machinelearningmastery.com/
+	*: https://towardsdatascience.com/
+	*: https://www.analyticsvidhya.com/
+2- Do:
+	*: Model Precision vs. Cost
+	*: Write Story
+	*: Move Notebook to Colab
+	*: Resume
+	*: Study Fast.ai for Neural Nets
